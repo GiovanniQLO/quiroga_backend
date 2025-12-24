@@ -20,24 +20,24 @@ public class TeamRepository {
 
         teamMembers.put(id1, new TeamMember(
                 id1,
-                "Javier Gallego",
-                "Talent Trainer",
-                "8 años de experiencia en el campo de recursos humanos",
-                "http://photo.com"));
+                "Javier",
+                "Immigration Attorney",
+                "10 years of experience in immigration law with expertise in asylum and refugee cases",
+                "./assets/lawyer-m.svg"));
 
         teamMembers.put(id2, new TeamMember(
-                id1,
+                id2,
                 "Jenny",
-                "Talent Trainer",
-                "8 años de experiencia en el campo de recursos humanos",
-                "http://photo.com"));
+                "Immigration Attorney",
+                "8 years of experience helping families navigate the immigration process and reunite safely",
+                "./assets/lawyer-f.svg"));
 
         teamMembers.put(id3, new TeamMember(
-                id1,
+                id3,
                 "Daniel",
-                "Talent Trainer",
-                "8 años de experiencia en el campo de recursos humanos",
-                "http://photo.com"));
+                "Immigration Attorney",
+                "12 years of experience in deportation defense and removal proceedings",
+                "./assets/lawyer-m.svg"));
 
     }
 

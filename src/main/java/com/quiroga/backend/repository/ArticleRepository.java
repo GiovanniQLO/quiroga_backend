@@ -17,49 +17,31 @@ public class ArticleRepository {
     public void init() {
         UUID id1 = UUID.randomUUID();
         UUID id2 = UUID.randomUUID();
+        UUID id3 = UUID.randomUUID();
 
         articles.put(id1, new Article(
                 id1,
-                "The injustice of waiting",
-                "injustice-waiting",
-                "A father of a family who has been waiting for almost 5 years to obtain his residence is just one of the cases that had to be sued in the Court, so that the Citizenship and Immigration Service (USCIS) deliver a response to cases where a pardon is required to acquire a residence",
-                "A father of a family who has been waiting for almost 5 years to \r\n" + //
-                        "obtain his residence is just one of the cases that had to be sued in the Court, so that the \r\n"
-                        + //
-                        "Citizenship and Immigration Service (USCIS) deliver a response to cases where a pardon is \r\n"
-                        + //
-                        "required to acquire a residence. \r\n" + //
-                        "The pain, despair and anxiety of this father is not only related with the restriction to work legally \r\n"
-                        + //
-                        "in the country, but also in the impossibility of carrying an identification, helping financially his family \r\n"
-                        + //
-                        "and even the limitation of mobility by not being able to travel, which constitutes a deprivation of \r\n"
-                        + //
-                        "their liberties that, in the end, affects their family.",
-                LocalDateTime.now().minusHours(5)));
+                "How Will Trump's Mass Deportation Plan Impact U.S. Agriculture?",
+                "trump-deportation-plan-agriculture",
+                "Former President Donald Trump's proposed mass deportation plan threatens to cripple U.S. agriculture by eliminating up to half of its workforce, according to analysts.",
+                "Former President Donald Trump's proposed mass deportation plan threatens to cripple U.S. agriculture by eliminating up to half of its workforce, according to analysts. The potential economic impact could be severe, affecting food production and prices across the nation.",
+                LocalDateTime.of(2025, 8, 2, 0, 0, 0)));
 
         articles.put(id2, new Article(
                 id2,
-                "The firm Quiroga Law Office opens new office in Wenatchee",
-                "QLO-new-office-wenatchee",
-                "A father of a family who has been waiting for almost 5 years to obtain his residence is just one of the cases that had to be sued in the Court, so that the Citizenship and Immigration Service (USCIS) deliver a response to cases where a pardon is required to acquire a residence",
-                "A father of a family who has been waiting for almost 5 years to \r\n" + //
-                        "obtain his residence is just one of the cases that had to be sued in the Court, so that the \r\n"
-                        + //
-                        "Citizenship and Immigration Service (USCIS) deliver a response to cases where a pardon is \r\n"
-                        + //
-                        "required to acquire a residence. \r\n" + //
-                        "The pain, despair and anxiety of this father is not only related with the restriction to work legally \r\n"
-                        + //
-                        "in the country, but also in the impossibility of carrying an identification, helping financially his family \r\n"
-                        + //
-                        "and even the limitation of mobility by not being able to travel, which constitutes a deprivation of \r\n"
-                        + //
-                        "their liberties that, in the end, affects their family.",
-                LocalDateTime.now().minusHours(5)
+                "What will Kamala Harris do about the border crisis?",
+                "kamala-harris-border-crisis",
+                "Immigration policy has been crucial in the 2024 presidential campaign, especially with Kamala Harris as the Democratic candidate. At our firm, we offer our perspective on Harris' impact on immigration policy and our challenges.",
+                "Immigration policy has been crucial in the 2024 presidential campaign, especially with Kamala Harris as the Democratic candidate. At our firm, we offer our perspective on Harris' impact on immigration policy and our challenges. As the potential future president, her policies could significantly impact immigration law and enforcement.",
+                LocalDateTime.of(2025, 7, 29, 0, 0, 0)));
 
-        ));
-
+        articles.put(id3, new Article(
+                id3,
+                "Immigration Medical Exam: Key for Green Card",
+                "immigration-medical-exam-green-card",
+                "To obtain permanent residency in the U.S., it is essential to pass a medical exam conducted by a USCIS-authorized physician. This exam, valid for six months, includes an evaluation of your medical history, a comprehensive physical examination, and the presentation of an updated vaccination record.",
+                "To obtain permanent residency in the U.S., it is essential to pass a medical exam conducted by a USCIS-authorized physician. This exam, valid for six months, includes an evaluation of your medical history, a comprehensive physical examination, and the presentation of an updated vaccination record. Understanding the requirements and preparation for this exam is crucial for a successful application.",
+                LocalDateTime.of(2025, 7, 25, 0, 0, 0)));
     }
 
     public List<Article> findAll() {

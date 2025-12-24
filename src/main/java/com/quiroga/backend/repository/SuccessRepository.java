@@ -17,6 +17,7 @@ public class SuccessRepository {
     public void init() {
         UUID id1 = UUID.randomUUID();
         UUID id2 = UUID.randomUUID();
+        UUID id3 = UUID.randomUUID();
 
         successStories.put(id1, new SuccessStory(
                 id1,
@@ -33,6 +34,14 @@ public class SuccessRepository {
                 "Immigration Services",
                 "We assisted Alejandro Torres, a talented software engineer, in securing an H-1B work visa and later a green card. This enabled him to join a leading tech company, contribute his expertise to innovative projects, and support his family back home while establishing roots in his new country...",
                 LocalDate.now().minusMonths(2)));
+
+        successStories.put(id3, new SuccessStory(
+                id3,
+                "Complex Deportation Defense and Cancellation of Removal",
+                "Roberto Santos",
+                "Immigration Services",
+                "We represented Roberto Santos in his deportation proceedings, where he faced removal based on a past criminal conviction. After demonstrating that he had been physically present in the U.S. for over 10 years, had good moral character, and that his removal would cause exceptional hardship to his U.S. citizen spouse and children, we successfully obtained cancellation of removal...",
+                LocalDate.now().minusMonths(1)));
     }
 
     public List<SuccessStory> findAll() {
